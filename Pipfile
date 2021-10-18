@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+absl-py = "*"
+google-api-python-client = "*"
+opt-einsum = "*"
+gast = "*"
+astunparse = "*"
+keras-preprocessing = "*"
+flatbuffers = "*"
+markupsafe = "*"
+flask = "*"
+tensorflow-cpu = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
