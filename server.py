@@ -64,7 +64,7 @@ def image():
         return e
 
 
-if __name__ == '__main__':
+def start_app():
 	# without SSL
     app.run(debug=True, host='0.0.0.0')
 
