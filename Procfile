@@ -1,1 +1,1 @@
-gunicorn "server:start_app()" 
+web: gunicorn server:myapp
