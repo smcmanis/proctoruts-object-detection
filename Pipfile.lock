@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3a75deb0ee8ae71820e7e73af59be6675a8e565d3e2ea1c86a6d1e8eb3b969d9"
+            "sha256": "622b39ca59257227b739007ecb08bcd5d58d0a934f1a77cc67fe31f3174b548b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,11 +18,11 @@
     "default": {
         "absl-py": {
             "hashes": [
-                "sha256:565a2c1be855e466e697e1be6b9876c2435dda926954d1de4abf0d592561ece8",
-                "sha256:eb0383bd431c0d7b2320179904cab00120a10977e3c9671d99efbbed17efb55a"
+                "sha256:72d782fbeafba66ba3e525d46bccac949b9a174dbf66233e50ece09ee688dc81",
+                "sha256:ea907384af023a7e681368bedb896159ab100c7db593efbbd5cde22af11270cd"
             ],
             "index": "pypi",
-            "version": "==0.14.1"
+            "version": "==0.15.0"
         },
         "astunparse": {
             "hashes": [
@@ -104,11 +104,11 @@
         },
         "google-api-python-client": {
             "hashes": [
-                "sha256:66389e23fdd23dc7fabf3235afc4bd9bf4d1332e960aa7c058f17ea8848dae35",
-                "sha256:faac5b276f90de1258d553b4dcf1cad92827b047ea31819927514b60e62616da"
+                "sha256:0b1bd4fe6cbe3c22e4ed264cadf257bc981ebc745e959bdf8fd9ae7c3fffb984",
+                "sha256:659e9955f0f1e02fcce5dec85622eb5af1807572ef0f09c49d68d8426da670e7"
             ],
             "index": "pypi",
-            "version": "==2.26.1"
+            "version": "==2.27.0"
         },
         "google-auth": {
             "hashes": [
@@ -197,6 +197,14 @@
                 "sha256:fb64abf0d92134cb0ba4496a3b7ab918588eee42de20e5b3507fe6ee16db97ee"
             ],
             "version": "==1.41.0"
+        },
+        "gunicorn": {
+            "hashes": [
+                "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e",
+                "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8"
+            ],
+            "index": "pypi",
+            "version": "==20.1.0"
         },
         "h5py": {
             "hashes": [
