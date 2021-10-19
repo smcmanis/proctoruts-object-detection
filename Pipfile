@@ -15,6 +15,7 @@ markupsafe = "*"
 flask = "*"
 tensorflow-cpu = "*"
 gunicorn = "*"
+Pillow = "*"
 
 [dev-packages]
 
