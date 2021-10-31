@@ -1,0 +1,50 @@
+Browser: Firefox-developer-edition 94.0b9 
+Operating System: Arch Linux 5.14.14
+Date: 22 October 2021
+--------------------------------
+
+Login and Logout Function (both user and invigilator)
+---------
+Login - minor issues
+- Pressing enter doesn’t sign in (need to click button with mouse)
+- After clicking the login button, there is a 2-3 second delay before it redirects to dashboard. During the delay it is unclear whether the website is responding.
+Logout - No issues
+    
+Invigilator screens
+---------
+- Clicking “Start Exam” shows a “Read Before Taking Exam” dialog. It seems like this is meant for the student side, not invigilator side.
+- Clicking the notifications menu button doesn’t do anything
+- High response latency b/w clicking other menu buttons and seeing response (maybe only for the first time visiting a page.)
+- Exam Dashboard - no major issues
+    - starting exam successfully shows current exam and enter exam room
+    - Entering exam room is slow to respond
+- Student Exam Dashboard - no major issues
+    - “end exam “ button to kick student from exam doesn’t do anything
+    - “mute toggle” doesn’t appear to do anything
+- Give Student a Warning
+      - doesnt actually send a warning (warning count resets on page refresh)
+- View Alerts per student - no issues
+- Web RTC - no issues
+
+For the Student Side
+---------
+- Exam Hub is accessible and you can start the exam
+- it would be clearer if an exam started by an invigilator was shown as an ongoing exam or something
+- Face ID 
+       - Could not get this to work even w/ updated face id
+- Your results has content - no issues
+- Past exams has content - no issues
+- Messages is working - minor issues
+    - tried sending a message from the invigilator but nothing happened. 
+    - no messages are displayed on the student side
+- Help page has content - no issuesnot get this to work
+
+N/A to test
+---------
+ - Video Blur
+- Screensharing
+- Exam can begin
+- Web RTC and video call connection 
+- You can end the call
+- You can test your equipment through calibration (Cam + Face ID + Screen share is working)
+
