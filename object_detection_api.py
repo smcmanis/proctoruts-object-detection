@@ -17,6 +17,7 @@ from object_detection.utils import label_map_util    ### CWH: Add object_detecti
 # Model Preparation
 
 # What model to download.
+# MODEL_NAME = 'yolo-v5-tflite'
 MODEL_NAME = 'ssd_mobilenet_v1_coco_2017_11_17'
 MODEL_FILE = MODEL_NAME + '.tar.gz'
 DOWNLOAD_BASE = 'http://download.tensorflow.org/models/object_detection/'
@@ -62,17 +63,18 @@ def load_image_into_numpy_array(image):
   return np.array(image.getdata()).reshape(
       (im_height, im_width, 3)).astype(np.uint8)
 
-with detection_graph.as_default():
-  sess =  tf.Session(graph=detection_graph)
-  # Definite input and output Tensors for detection_graph
-  image_tensor = detection_graph.get_tensor_by_name('image_tensor:0')
-  # Each box represents a part of the image where a particular object was detected.
-  detection_boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
-  # Each score represent how level of confidence for each of the objects.
-  # Score is shown on the result image, together with the class label.
-  detection_scores = detection_graph.get_tensor_by_name('detection_scores:0')
-  detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
-  num_detections = detection_graph.get_tensor_by_name('num_detections:0')
+if not sess:
+  with detection_graph.as_default():
+    sess =  tf.Session(graph=detection_graph)
+    # Definite input and output Tensors for detection_graph
+    image_tensor = detection_graph.get_tensor_by_name('image_tensor:0')
+    # Each box represents a part of the image where a particular object was detected.
+    detection_boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
+    # Each score represent how level of confidence for each of the objects.
+    # Score is shown on the result image, together with the class label.
+    detection_scores = detection_graph.get_tensor_by_name('detection_scores:0')
+    detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
+    num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
 # added to put object in JSON
 class Object(object):
